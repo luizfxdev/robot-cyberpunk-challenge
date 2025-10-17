@@ -284,7 +284,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 - GitHub: [@luizfxdev](https://github.com/luizfxdev)
 - LinkedIn: [Seu LinkedIn]([https://www.linkedin.com/in/seu-perfil](https://www.linkedin.com/in/luizfxdev))
-- Portfolio: [Seu Site](https://luizfxdev.com.br)
+- Portfolio: [Seu Site]([https://seu-site.com](https://luizfxdev.com.br))
 
 ---
 
