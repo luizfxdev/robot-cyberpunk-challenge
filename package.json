@@ -1,0 +1,30 @@
+{
+  "name": "robot-cyberpunk-challenge",
+  "version": "1.0.0",
+  "description": "Sistema de análise de números com tema cyberpunk",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node js/server.js",
+    "dev": "nodemon js/server.js",
+    "load-data": "node js/loadData.js",
+    "test": "node js/testAnalysis.js"
+  },
+  "keywords": [
+    "cyberpunk",
+    "numbers",
+    "analysis",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

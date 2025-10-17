@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robô-Cyberpunk Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Vídeo de Background -->
+    <video id="bg-video" autoplay loop muted playsinline>
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Áudio de Background -->
+    <audio id="bg-audio" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Container Principal -->
+    <div class="main-container">
+      <div class="container">
+        <h1 class="title">ROBÔ-CYBERPUNK<br /><span class="subtitle">ANÁLISE DE NÚMEROS</span></h1>
+
+        <!-- Input de Entrada -->
+        <div class="input-section">
+          <label for="number-input">Digite um número (1-999):</label>
+          <input
+            type="number"
+            id="number-input"
+            min="1"
+            max="999"
+            placeholder="Insira um número de 1 a 999"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Área dos Botões -->
+        <div class="buttons-section">
+          <div class="center">
+            <button class="btn" id="analyze-btn">
+              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+              </svg>
+              <span>CALCULAR</span>
+            </button>
+          </div>
+          <div class="center">
+            <button class="btn" id="return-btn">
+              <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+              </svg>
+              <span>RETORNAR</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Seção de Resultados -->
+        <div class="result-section" id="result-section">
+          <h2 class="result-title">ANÁLISE COMPLETA</h2>
+          <div id="result-content" class="result-content"></div>
+
+          <!-- Estatísticas do Banco de Dados -->
+          <div class="database-stats" id="database-stats"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
